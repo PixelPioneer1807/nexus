@@ -27,11 +27,22 @@ Stage A (failure models + Phase 0 design), step A1 in progress. Roadmap is step-
 ## Working agreement
 Shivam writes pseudocode / design; Claude writes the code and tests; Shivam explains back (ADR-003).
 
-## Where we stopped
-A1 lesson given. Waiting for Shivam's quick-check answers and refund-workflow pseudocode.
-Then: write `docs/phase0/PROBLEM.md` from his pseudocode.
+## Where we stopped (2026-11-13, ~00:45)
+- A1 lesson given; still waiting for Shivam's 3 answers + refund-workflow pseudocode.
+- **In progress: public "book" of study chapters** (Shivam's request: his study materials should be
+  public as blog-style chapters for his future portfolio website). Decided shape:
+  - `docs/book/<Stage>-<slug>/<StepID>-<slug>.md`, one full blog chapter per step (the lesson written
+    out: problem, core idea, internals, failure modes, NEXUS usage, exercises, his pseudocode, what we
+    built, interview questions, further reading), YAML frontmatter for the website (step, title, slug,
+    part, status draft/published, date, tags, summary, resources, artifacts).
+  - A generated table of contents + `index.json` for the website (script not written yet).
+  - `docs/learning/STUDY_LOG.md` stays private (profile, grades, tutor notes).
+- On disk now: empty `docs/book/A-failure-and-design/`; `_TEMPLATE.md` and chapter A1 NOT written yet.
 
 ## Next steps
+0. Finish the book setup: `_TEMPLATE.md`, chapter A1 as a full blog chapter, ToC/index generator
+   script + test, update SYLLABUS "How a step works" (write chapter → publish on 🟢), memory, and
+   both checkpoint prompts to maintain the book. Commit + push.
 1. A1: grade Shivam's answers, write `docs/phase0/PROBLEM.md` from his pseudocode.
 2. A2: delivery guarantees per refund step, `docs/phase0/GUARANTEES.md`.
 3. A3: in-memory idempotency ledger + tests.
