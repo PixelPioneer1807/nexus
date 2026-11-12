@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# Private tutoring log (profile, grades, streak) — stays local, not in the public portfolio
+docs/learning/STUDY_LOG.md
