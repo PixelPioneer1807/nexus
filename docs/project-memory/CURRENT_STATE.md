@@ -11,8 +11,10 @@ Stage A (failure models + Phase 0 design), step A1 in progress. Roadmap is step-
 - Manual smoke test: `uvicorn` on port 8077 returned `{"status":"ok"}`.
 
 ## Repository
-- `git init` done on branch `main`; **no commits yet** (Shivam commits and pushes himself).
-- No GitHub remote yet; `gh` CLI not installed.
+- Branch `main`; remote `origin` = https://github.com/PixelPioneer1807/nexus.git (public).
+- Claude commits and pushes for this repo (Shivam's decision, 2026-11-13). `gh` CLI not installed.
+- Automatic checkpoints keep these docs in sync: a 3-hourly session job and a nightly scheduled
+  task (`nexus-daily-checkpoint`).
 - `docs/learning/STUDY_LOG.md` is gitignored on purpose (private profile, grades, streak).
 
 ## Known issues
