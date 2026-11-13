@@ -6,3 +6,4 @@
 | [ADR-002](decisions/ADR-002-starting-stack.md) | 2026-11-12 | Python + FastAPI + PostgreSQL, monolith + worker | Proposed | From the guide; confirm in Stage G |
 | [ADR-003](decisions/ADR-003-working-mode.md) | 2026-11-12 | Shivam writes pseudocode, Claude writes code, Shivam explains back | Accepted | Shivam |
 | [ADR-004](decisions/ADR-004-full-guide-stepwise.md) | 2026-11-13 | Full guide, step by step, nothing cut, ~5 months | Accepted | Shivam |
+| [ADR-005](decisions/ADR-005-public-study-book.md) | 2026-11-13 | Public study book: one blog chapter per step in `docs/book/` | Accepted (not built yet) | Shivam |

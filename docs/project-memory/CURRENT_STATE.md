@@ -1,13 +1,13 @@
 # Current State — NEXUS
 
-_Last updated: 2026-11-13_
+_Last updated: 2026-11-14 (nightly checkpoint)_
 
 ## Phase
 Stage A (failure models + Phase 0 design), step A1 in progress. Roadmap is step-based (ADR-004).
 
 ## Implemented and verified
 - Python project skeleton (`pyproject.toml`, uv-managed `.venv`, Python 3.15.2 picked by uv).
-- `GET /health` in `src/nexus/api/app.py`; `tests/test_health.py` passes (`uv run pytest -q` → 1 passed).
+- `GET /health` in `src/nexus/api/app.py`; `tests/test_health.py` passes (`uv run pytest -q` → 1 passed, re-run 2026-11-14).
 - Manual smoke test: `uvicorn` on port 8077 returned `{"status":"ok"}`.
 
 ## Repository
@@ -37,7 +37,10 @@ Shivam writes pseudocode / design; Claude writes the code and tests; Shivam expl
     part, status draft/published, date, tags, summary, resources, artifacts).
   - A generated table of contents + `index.json` for the website (script not written yet).
   - `docs/learning/STUDY_LOG.md` stays private (profile, grades, tutor notes).
-- On disk now: empty `docs/book/A-failure-and-design/`; `_TEMPLATE.md` and chapter A1 NOT written yet.
+- On disk now: empty `docs/book/A-failure-and-design/` (local only: git does not track empty folders);
+  `_TEMPLATE.md` and chapter A1 NOT written yet. Decision recorded as ADR-005.
+- No NEXUS session after this point on 2026-11-13 (checked 2026-11-14). Working tree clean; HEAD `bcb6f42`
+  before the checkpoint commit.
 
 ## Next steps
 0. Finish the book setup: `_TEMPLATE.md`, chapter A1 as a full blog chapter, ToC/index generator
